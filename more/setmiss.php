@@ -1,0 +1,9 @@
+<?php
+include_once"../php/pdo_function.php";
+$sendname=$_GET['sendname'];
+$toname=$_GET['toname'];
+$action=$_GET['action'];
+/*$sendname='xiaoxiami';
+$toname='mama';*/
+insert_missinfo($sendname,$toname,$action);
+?>

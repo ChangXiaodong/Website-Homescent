@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312"/>
+<script type="text/javascript">
+//var cookie_name=getCookie('username');
+
+//alert(length);
+alert('ok');
+//var c_name='username';
+alert(getCookie('username'));
+function getCookie(c_name){
+		var length = document.cookie.length;
+	if(length>0&&c_name!=''){
+			var c_start=document.cookie.indexOf("=")+1;
+			var c_end=c_name.length+1;
+			var cookievalue=unescape(document.cookie.substring(c_start,c_start+c_end));
+			return cookievalue
+			//alert(cookievalue);
+	}
+	else{
+		return '';
+	}
+}
+</script>
